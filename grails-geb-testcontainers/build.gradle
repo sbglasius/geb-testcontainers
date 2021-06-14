@@ -2,7 +2,7 @@ apply plugin: 'java'
 apply plugin: 'groovy'
 
 group 'dk.glasius'
-version '0.1.0'
+version '1.0.0'
 
 repositories {
     maven { url "https://repo.grails.org/grails/core" }

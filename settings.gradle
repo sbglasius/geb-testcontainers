@@ -1,4 +1,4 @@
 rootProject.name = 'geb-testcontainers'
 
-include 'geb-testcontainers-lib'
+include 'grails-geb-testcontainers'
 include 'geb-testcontainers-demo'

@@ -1,13 +1,15 @@
-plugins {
-    id 'groovy'
-    id 'maven-publish'
-}
+apply plugin: 'java'
+apply plugin: 'groovy'
 
 group 'dk.glasius'
+version '0.1.0'
 
 repositories {
     maven { url "https://repo.grails.org/grails/core" }
 }
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
 
 dependencies {
     implementation 'org.codehaus.groovy:groovy-all:2.5.14'
@@ -19,4 +21,10 @@ dependencies {
     implementation "org.testcontainers:selenium:1.15.3"
 
     testImplementation 'org.spockframework:spock-core:1.3-groovy-2.5'
+}
+
+
+if (project.hasProperty('release')) {
+    println 'Using release profile for building ' + project.getName()
+    apply from: 'gradle/profile-release.gradle'
 }

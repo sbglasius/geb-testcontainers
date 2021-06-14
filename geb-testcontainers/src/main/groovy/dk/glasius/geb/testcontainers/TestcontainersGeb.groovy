@@ -1,4 +1,4 @@
-package geb.testcontainers
+package dk.glasius.geb.testcontainers
 
 import geb.spock.GebSpec
 import groovy.transform.SelfType

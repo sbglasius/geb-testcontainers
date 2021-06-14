@@ -71,7 +71,7 @@ dependencies {
     testRuntime "org.seleniumhq.selenium:selenium-chrome-driver:3.14.0"
     testRuntime "org.seleniumhq.selenium:selenium-firefox-driver:3.14.0"
 
-    testCompile project(':grails-geb-testcontainers')
+    testCompile project(':geb-testcontainers')
     testCompile "org.testcontainers:spock:1.15.3"
     testCompile "org.testcontainers:selenium:1.15.3"
 }

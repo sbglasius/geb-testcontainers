@@ -1,4 +1,4 @@
-package geb.testcontainers
+package dk.glasius.geb.testcontainers
 
 import org.openqa.selenium.remote.RemoteWebDriver
 import org.testcontainers.Testcontainers
@@ -53,7 +53,7 @@ class TestcontainersWebDriver {
 
         @Override
         String getFilesystemFriendlyName() {
-            "${className}-${testName}"
+            "${className}-${testName}".replaceAll(/\//, '_')
         }
     }
 

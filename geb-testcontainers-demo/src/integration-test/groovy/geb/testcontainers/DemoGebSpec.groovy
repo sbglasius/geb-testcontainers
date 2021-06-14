@@ -1,5 +1,6 @@
 package geb.testcontainers
 
+import dk.glasius.geb.testcontainers.TestcontainersGeb
 import geb.spock.GebSpec
 import grails.testing.mixin.integration.Integration
 

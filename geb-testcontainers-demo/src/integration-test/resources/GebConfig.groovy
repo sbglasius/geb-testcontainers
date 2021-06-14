@@ -1,9 +1,9 @@
-import com.github.dockerjava.api.model.HostConfig
-import geb.testcontainers.TestcontainersWebDriver
+import dk.glasius.geb.testcontainers.TestcontainersWebDriver
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
 import org.openqa.selenium.firefox.FirefoxDriver
 import org.testcontainers.containers.BrowserWebDriverContainer
+
 import static org.openqa.selenium.remote.DesiredCapabilities.chrome
 import static org.testcontainers.containers.BrowserWebDriverContainer.VncRecordingMode.RECORD_ALL
 import static org.testcontainers.shaded.org.apache.commons.io.FileUtils.ONE_GB

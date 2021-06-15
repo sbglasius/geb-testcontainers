@@ -11,13 +11,13 @@ In your `build.gradle` make depencencies to
 ```groovy
     testCompile "org.testcontainers:spock:1.15.3"
     testCompile "org.testcontainers:selenium:1.15.3"
-    testCompile "dk.glasius:geb-testcontainers:1.0.0"
+    testCompile "dk.glasius:geb-testcontainers:1.0.1"
 ```
 
 In your `test/resources` or `integration-test/resources` make a minimum `GebConfig.groovy` like this:
 
 ```groovy
-import geb.testcontainers.TestcontainersWebDriver
+import dk.glasius.geb.testcontainers.TestcontainersWebDriver
 import org.openqa.selenium.chrome.ChromeDriver
 
 def container = new BrowserWebDriverContainer()
